@@ -1,0 +1,20 @@
+// Default style for the header
+.header-hidden {
+    display: none; // Hide the header by default
+  
+    .page-header {
+      height: 35px;
+  
+      .mask {
+        background: linear-gradient(to right, #4e54c8, #8f94fb) !important;
+        opacity: 0;
+      }
+    }
+  }
+
+// Media query for thinner screens
+@media only screen and (max-width: 600px) {
+    .header-hidden {
+      display: block; // Show the header on screens with a maximum width of 600px
+    }
+  }

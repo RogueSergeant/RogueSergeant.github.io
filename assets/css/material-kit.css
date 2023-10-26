@@ -18472,7 +18472,7 @@ body.dark-version {
   }
   .navbar-toggler + .navbar-collapse .dropdown.nav-item .dropdown-menu {
     background-color: transparent;
-    overflow: scroll;
+    overflow: auto;
     position: relative;
   }
   .dropdown .dropdown-menu {
@@ -23460,6 +23460,22 @@ pre[class*=language-] {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .ps {
     overflow: auto !important;
+  }
+}
+.header-hidden {
+  display: none;
+}
+.header-hidden .page-header {
+  height: 35px;
+}
+.header-hidden .page-header .mask {
+  background: linear-gradient(to right, #4e54c8, #8f94fb) !important;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-hidden {
+    display: block;
   }
 }
 /*# sourceMappingURL=material-kit.css.map */
